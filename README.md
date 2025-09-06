@@ -2,7 +2,7 @@
 
 A **developer-first, admin-friendly, high-performance CRM** written in C#/.NET that rivals Salesforce in breadth while beating it in **speed, openness, pricing clarity, and customization**.
 
-## 🚀 Core Differentiators
+## Core Differentiators
 
 1. **Blazing performance**: sub-100 ms P95 for common reads; reactive UI with optimistic concurrency; realtime presence/updates
 2. **Open data & clean exits**: one-click full export (JSONL + Parquet + SQL), reverse-ETL connectors; no proprietary lock-in
@@ -12,7 +12,7 @@ A **developer-first, admin-friendly, high-performance CRM** written in C#/.NET t
 6. **Predictable pricing**: per-seat + fair usage for compute/storage; unlimited API calls within reasonable throttles
 7. **First-class mobile & offline**: .NET MAUI app with delta sync; conflict-free replicated data types (CRDT) for notes/activities
 
-## 🏗️ Architecture
+## Architecture
 
 Built using **Clean Architecture** principles with a modular monolith approach:
 
@@ -32,7 +32,7 @@ FrontierCRM/
     └── FrontierCRM.EndToEndTests/
 ```
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Runtime**: .NET 9, ASP.NET Core Minimal APIs
 - **Database**: PostgreSQL with JSONB for custom fields
@@ -44,21 +44,21 @@ FrontierCRM/
 - **Observability**: OpenTelemetry, Prometheus, Grafana
 - **Deploy**: Containers + Kubernetes
 
-## 🎯 Multi-Tenancy
+## Multi-Tenancy
 
 - **Primary model**: Single database, shared schema with `TenantId` on every row + EF Core global query filters
 - **Optional premium isolation**: Dedicated DB per large tenant
 - **Security**: Row-level security enforced in app layer + DB RLS (optional)
 - **Limits/Quotas**: Seats, storage, API bandwidth, automation runtime seconds
 
-## 🔐 Security & Permissions
+## Security & Permissions
 
 - **AuthN**: OIDC/SAML SSO; sessions via cookies + rotating refresh tokens
 - **AuthZ**: Hybrid Role-Based + Attribute-Based (RBAC+ABAC)
 - **Record sharing**: Owner-centric; share tables with effective permissions computed via materialized view/cache
 - **Audit & Compliance**: Append-only audit log; immutable hash chain; GDPR tooling
 
-## 📊 Core CRM Features
+## Core CRM Features
 
 ### MVP (3–4 months)
 - Auth/SSO, Tenants & Users, Roles/Permissions
@@ -79,7 +79,7 @@ FrontierCRM/
 - App marketplace (private apps), change data capture stream
 - Mobile app with offline (.NET MAUI)
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - .NET 9 SDK
@@ -115,7 +115,7 @@ FrontierCRM/
    - API: `https://localhost:7001`
    - Web UI: `https://localhost:7002`
 
-## 📈 Development Roadmap
+## Development Roadmap
 
 ### Days 0–30
 - ✅ Bootstrap repo & CI/CD
@@ -145,15 +145,15 @@ FrontierCRM/
 - Billing/metering
 - Closed beta
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
+## Support
 
 - Documentation: [docs.frontiercrm.com](https://docs.frontiercrm.com)
 - Issues: [GitHub Issues](https://github.com/yourusername/FrontierCRM/issues)
@@ -161,4 +161,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ using .NET 9 and Clean Architecture principles**
+**Built with .NET 9 and Clean Architecture principles**
