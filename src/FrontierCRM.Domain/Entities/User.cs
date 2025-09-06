@@ -46,7 +46,6 @@ public class User : TenantScopedEntity
     // Navigation properties
     public Tenant Tenant { get; set; } = null!;
     public ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
-    public ICollection<Activity> Activities { get; set; } = new List<Activity>();
     
     public User() { }
     
